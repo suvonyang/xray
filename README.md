@@ -5,7 +5,19 @@
 # 一键安装
 
 ```bash
+bash <(curl -L https://raw.githubusercontent.com/suvonyang/xray/main/install.sh)
+```
+
+也兼容带 `@ install` 的写法：
+
+```bash
 bash <(curl -L https://raw.githubusercontent.com/suvonyang/xray/main/install.sh) @ install
+```
+
+或使用 wget（原版推荐写法）：
+
+```bash
+bash <(wget -qO- -o- https://github.com/suvonyang/xray/raw/main/install.sh)
 ```
 
 安装后使用 `xray help` 查看帮助，`xray add vlessenc` 添加 VLESS-Encryption 配置。

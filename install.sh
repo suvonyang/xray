@@ -290,6 +290,11 @@ pass_args() {
         -h | --help)
             show_help
             ;;
+        @ | install)
+            # 兼容写法: bash <(curl ...) @ install 或 bash -c "$(curl ...)" @ install
+            # @ 是 bash -c 的 $0 占位, install 为约定俗成的动作参数, 均忽略
+            shift 1
+            ;;
         *)
             echo -e "\n${is_err} ($@) 为未知参数...\n"
             show_help
