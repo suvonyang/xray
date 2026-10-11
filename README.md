@@ -2,6 +2,14 @@
 
 最好用的 Xray 一键安装脚本 & 管理脚本
 
+# 一键安装
+
+```bash
+bash <(curl -L https://raw.githubusercontent.com/suvonyang/xray/main/install.sh) @ install
+```
+
+安装后使用 `xray help` 查看帮助，`xray add vlessenc` 添加 VLESS-Encryption 配置。
+
 # 特点
 
 - 快速安装
