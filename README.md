@@ -20,6 +20,26 @@ bash <(curl -L https://raw.githubusercontent.com/suvonyang/xray/main/install.sh)
 bash <(wget -qO- -o- https://github.com/suvonyang/xray/raw/main/install.sh)
 ```
 
+## 安装完成
+
+当你执行了上面的安装命令，并且没有错误提示的话，那么你就能看到类似下面的图片
+
+脚本特意弄了一个时间显示，给反馈用来检测安装时间的…
+
+理论上，绝大多数情况下 15 秒内会安装完成，条件允许的情况下仅需一秒即可完成安装！
+
+超过 15 秒的你应该考虑换 VPS 了
+
+为方便你快速使用，脚本在安装完成后会自动创建一个 VLESS-REALITY 配置
+
+此时你可以复制 URL 到相关软件 (例如 v2rayN) 去测试一下是否正常使用。
+
+## 管理面板
+
+安装完成后，输入 `xray` 就能看到管理面板
+
+提示，如果你不想执行任何功能，直接按 Enter 回车退出即可。
+
 安装后使用 `xray help` 查看帮助，`xray add vlessenc` 添加 VLESS-Encryption 配置。
 
 # 特点
